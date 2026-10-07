@@ -73,14 +73,12 @@ function setupValidation() {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     
     if (emailInput.value.trim() === '') {
-      emailError.textContent = 'Email address is required.';
-      isValid = false;
-    } else if (!emailRegex.test(emailInput.value.trim())) {
-      emailError.textContent = 'Please enter a valid email address (e.g., user@example.com).';
-      isValid = false;
-    } else {
-      emailError.textContent = '';
-    }
+            emailError.textContent = 'Email address is required.';
+            isValid = false;
+        } else if (!emailRegex.test(emailInput.value.trim())) {
+            emailError.textContent = 'Please enter a valid email address (e.g., user@example.com).';
+            isValid = false;
+        }
 
     // Save state on valid submission
     if (isValid) {
