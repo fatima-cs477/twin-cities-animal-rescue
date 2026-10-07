@@ -104,3 +104,8 @@ function prefillForm() {
     if (emailInput && !emailInput.value) emailInput.value = savedUser.email;
   }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    setupValidation();
+    prefillForm();
+});
