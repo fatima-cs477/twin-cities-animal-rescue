@@ -23,19 +23,20 @@
         <section>
             <h2>Volunteer or Foster Interest Form</h2>
             <form id="contact-form" action="#" method="post" novalidate>
-                <fieldset>
-                    <legend>Contact &amp; Interest Details</legend>
-                    
-                    <p>
-                        <label for="full-name">Full Name:</label><br>
-                        <input type="text" id="full-name" name="full-name" required>
-                    </p>
-                    
-                    <p>
-                        <label for="email">Email Address:</label><br>
-                        <input type="email" id="email" name="email" required>
-                    </p>
-                    
+    <fieldset>
+        <legend>Contact &amp; Interest Details</legend>
+
+        <p>
+            <label for="full-name">Full Name:</label><br>
+            <input type="text" id="name" name="full-name"><br>
+            <span id="name-error" style="color: red;"></span>
+        </p>
+
+        <p>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <span id="email-error" style="color: red;"></span>
+        </p>
                     <p>
                         <label for="interest-type">Interest Type:</label><br>
                         <select id="interest-type" name="interest-type" required>
